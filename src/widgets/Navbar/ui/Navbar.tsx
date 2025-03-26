@@ -2,7 +2,7 @@
 
 import { Avatar } from "@/src/shared/ui/Avatar";
 import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import { BadgePlus, LogOut } from "lucide-react";
+import { BadgePlusIcon, LogOutIcon } from "lucide-react";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,15 +25,15 @@ export const Navbar: React.FC = () => {
                 className="flex gap-1 items-center transition-colors hover:text-primary"
                 href={"/startup/create"}
               >
-                <BadgePlus className="size-6" />
+                <BadgePlusIcon className="size-6" />
                 <span className="max-sm:hidden">Create</span>
               </Link>
               <button
                 className="flex gap-1 items-center transition-colors hover:text-primary"
                 onClick={() => signOut()}
               >
-                <LogOut className="size-6" />
-                <span className="max-sm:hidden">Logout</span>
+                <LogOutIcon className="size-6" />
+                <span className="max-sm:hidden">LogoutIcon</span>
               </button>
               <Link
                 className="flex gap-1 items-center transition-colors hover:text-primary"

@@ -5,7 +5,7 @@ import { Textarea } from "@/src/shared/ui/Textarea";
 import { useActionState, useState } from "react";
 import MDEditor from "@uiw/react-md-editor";
 import { Button } from "@/src/shared/ui/Button";
-import { Send } from "lucide-react";
+import { SendIcon } from "lucide-react";
 import { formSchema } from "../lib/validation";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
@@ -162,7 +162,7 @@ export const StartupForm: React.FC = () => {
         className="startup-form_btn text-white"
       >
         {isPending ? "Submitting..." : "Submit"}{" "}
-        <Send className="size-6 ml-2" />
+        <SendIcon className="size-6 ml-2" />
       </Button>
     </form>
   );
